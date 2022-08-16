@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Koulen&family=Lato:ital@1&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.cabecalho {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(90deg, rgba(143, 190, 255, 1), rgba(0, 65, 255, 1));
+    display: flex;
+    width: 100%;
+    height: 80px;
+    font-size: 25.80px;
+    text-align: center;
+}
+
+
+.cabecalho a {
+    padding: 20px;
+    margin: auto;
+    text-decoration: none;
+    color: #000000;
+}
+
+.sobre {
+    font-family: 'Lato', sans-serif;
+    width: 90%;
+    font-size: 35px;
+    margin-top: 15px;
+    padding: 15px;
+}
+
+
+.historia {
+    width: 90%;
+    font-size: 25px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.texto {
+    width: 43%;
+    font-size: 25px;
+    text-align: justify;
+    padding: 15px;
+    display: inline-block;
+}
+
+.img {
+    display: inline-block;
+    margin-left: 10%;
+    position: absolute;
+}
+
+.contato {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(90deg, rgba(143, 190, 255, 1), rgba(0, 65, 255, 1));
+    width: 97.5%;
+    font-size: 35px;
+    margin-top: auto;
+    padding: 15px;
+}
+
+
+.contatos {
+    width: 50%;
+    text-align: justify;
+    font-size: 25px;
+    display: inline-block;
+    margin: auto;
+}
+
+.input {
+    font-size: 25px;
+    display: inline-block;
+    margin: auto;
+
+}
+
+.input input,
+textarea {
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+.icons img {
+    width: 50px;
+}
+
+.myButton {
+    background: linear-gradient(90deg, rgba(143, 190, 255, 1), rgba(0, 65, 255, 1));
+    background-color: rgba(0, 65, 255, 1);
+    border-radius: 28px;
+    border: 1px solid rgba(0, 65, 255, 1);
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px rgba(0, 65, 255, 1);
+}
+
+.myButton:hover {
+    background: linear-gradient(90deg, rgba(0, 65, 255, 1), rgba(143, 190, 255, 1));
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+/*inicio responsivo*/
+
+@media screen and (max-width:1330px) {}
+
+@media screen and (max-width: 1064px) {
+    .cabecalho {
+        font-size: 18px;
+    }
+
+    .texto {
+        width: 100%;
+    }
+
+    .img {
+        display: none;
+    }
+
+}
