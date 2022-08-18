@@ -152,6 +152,12 @@ textarea {
 
 /*inicio responsivo*/
 
+@media screen and (min-width:300px) {
+    .logo {
+        display: flex;
+    }
+}
+
 @media screen and (max-width:1330px) {}
 
 @media screen and (max-width: 1064px) {
