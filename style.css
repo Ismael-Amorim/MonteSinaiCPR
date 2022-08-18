@@ -5,10 +5,40 @@
     padding: 0;
 }
 
+main.cards {
+    display: flex;
+    padding: 32px;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
+    text-align: center;
+    border-radius: 8px;
+    max-height: 256px;
+}
+
+main.cards section.card .foto {
+    width: 300px;
+    height: 200px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+
 body {
     background-color: #fff;
     width: 100%;
     font-family: 'Lato', sans-serif;
+}
+
+.logo {
+    display: none;
 }
 
 .cabecalho {
@@ -119,21 +149,69 @@ textarea {
     top: 1px;
 }
 
+
 /*inicio responsivo*/
 
 @media screen and (max-width:1330px) {}
 
 @media screen and (max-width: 1064px) {
-    .cabecalho {
-        font-size: 18px;
+
+    main.cards {
+        flex-direction: column;
+        background: rgba(143, 190, 255, 1);
+    }
+
+    .cabecalho,
+    a {
+        font-size: 15px;
+        padding: 0px;
+        margin: auto;
+    }
+
+    .cabecalho img {
+        display: none;
     }
 
     .texto {
         width: 100%;
+        font-size: 20px;
     }
 
     .img {
         display: none;
     }
 
+    .input input,
+    textarea {
+        width: 75%;
+    }
+
+    .contato {
+        width: 90%;
+    }
+
+    .contatos {
+        width: 100%;
+    }
+
+    .sobre {
+        text-align: center;
+    }
+
+    .contato,
+    .contatos,
+    .input {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 250px;
+        display: flex;
+        position: relative;
+        margin: auto;
+    }
+
+    .logo {
+        background: linear-gradient(90deg, rgba(143, 190, 255, 1), rgba(0, 65, 255, 1));
+    }
 }
